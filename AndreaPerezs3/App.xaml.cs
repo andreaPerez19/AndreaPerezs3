@@ -9,8 +9,8 @@ namespace AndreaPerezs3
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            //habilitar navegacion entre ventanas
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

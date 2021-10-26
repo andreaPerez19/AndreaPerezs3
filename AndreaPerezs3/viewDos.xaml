@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndreaPerezs3.viewDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#330099" Padding="0" CornerRadius="0">
+                <Label Text="Sistema de Calificaciones UISRAEL" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+            </Frame>
+            <Label x:Name="lblUsuario" TextColor="Black" HorizontalTextAlignment="Center"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="PARCIAL I" TextColor="#FDFEFE" BackgroundColor="#9966FF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Row="0" Grid.Column="0" Text="   Nota de seguimiento 1" TextColor="Black"  BackgroundColor="#E5E7E9" />
+                <Label Grid.Row="0" Grid.Column="1" Text="   Resultado 30%" TextColor="Black"  BackgroundColor="#E5E7E9"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtSeguimiento30" IsReadOnly="True" BackgroundColor="#E5E7E9" />
+                <Entry Grid.Row="1" Grid.Column="0" x:Name="txtSeguimiento1" Keyboard="Numeric" Placeholder="Ingrese nota sobre 10" BackgroundColor="#E5E7E9" TextChanged="txtSeguimiento1_TextChanged" />
+
+                <Label Grid.Row="2" Grid.Column="0" Text="   Examen" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="   Resultado 20%" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtExamen20" IsReadOnly="True" BackgroundColor="#E5E7E9" />
+                <Entry Grid.Row="3" Grid.Column="0" x:Name="txtExamen1" Keyboard="Numeric" Placeholder="Ingrese nota sobre 10"  BackgroundColor="#E5E7E9" TextChanged="txtExamen1_TextChanged"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Nota Parcial 1         " TextColor="Black" BackgroundColor="#E5E7E9" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtParcial1" IsReadOnly="True"  BackgroundColor="#E5E7E9"/>
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="PARCIAL II" TextColor="#FDFEFE" BackgroundColor="#9966FF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Row="0" Grid.Column="0" Text="   Nota de seguimiento 2" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="   Resultado 30%" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Entry Grid.Row="1" Grid.Column="0" x:Name="txtSeguimiento2" Keyboard="Numeric" Placeholder="Ingrese nota sobre 10"  BackgroundColor="#E5E7E9" TextChanged="txtSeguimiento2_TextChanged"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="seguimiento30" IsReadOnly="True"  BackgroundColor="#E5E7E9"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="   Examen" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="   Resultado 20%" TextColor="Black" BackgroundColor="#E5E7E9"/>
+                <Entry Grid.Row="3" Grid.Column="0" x:Name="txtExamen2" Keyboard="Numeric" Placeholder="Ingrese nota sobre 10"  BackgroundColor="#E5E7E9" TextChanged="txtExamen2_TextChanged"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="Examen20" IsReadOnly="True"  BackgroundColor="#E5E7E9"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Nota Parcial 2          " TextColor="Black" BackgroundColor="#E5E7E9" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtParcial2" IsReadOnly="True"  BackgroundColor="#E5E7E9" TextColor="Black"/>
+
+                <Label Grid.Row="5" Grid.Column="0" Text="NOTA FINAL              " TextColor="#641E16" BackgroundColor="#E5E7E9" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtFinal" IsReadOnly="True"  BackgroundColor="#E5E7E9" TextColor="#641E16"/>
+
+                <Label Grid.Row="6" Grid.Column="0" Text="ESTADO                     " TextColor="#641E16" BackgroundColor="#E5E7E9" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="6" Grid.Column="1" x:Name="txtEstado" IsReadOnly="True"  BackgroundColor="#17202A" TextColor="White"/>
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btnCalcularNota" Text="Calcular Nota" Clicked="btnCalcularNota_Clicked" BackgroundColor="#330099" TextColor="White"  />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

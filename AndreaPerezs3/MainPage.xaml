@@ -4,12 +4,17 @@
              x:Class="AndreaPerezs3.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#330099" Padding="15" CornerRadius="0">
+            <Label Text="Bienvenido al sistema, Ingresa tus Datos" HorizontalTextAlignment="Center" TextColor="White" FontSize="23"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
+        <Entry x:Name="txtContrasena" Placeholder="Ingrese la contrasena" IsPassword="True"/>
+
+        <Button x:Name="btnAbrir" Text="Ingresar" Clicked="btnAbrir_Clicked"/>
+
         
+
     </StackLayout>
 
 </ContentPage>

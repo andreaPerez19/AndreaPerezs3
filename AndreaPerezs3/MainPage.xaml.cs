@@ -14,5 +14,23 @@ namespace AndreaPerezs3
         {
             InitializeComponent();
         }
+
+        
+
+        private async void btnAbrir_Clicked(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string clave = txtContrasena.Text;
+
+            if(usuario == "estudiante2021" && clave== "uisrael2021"){
+                await Navigation.PushAsync(new viewDos(usuario));
+            }
+            else
+            {
+                DisplayAlert("Mensaje de advertencia", "usuario o clave incorrectos", "OK");
+            }
+
+            
+        }
     }
 }
