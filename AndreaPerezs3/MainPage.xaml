@@ -13,8 +13,6 @@
 
         <Button x:Name="btnAbrir" Text="Ingresar" Clicked="btnAbrir_Clicked"/>
 
-        
-
     </StackLayout>
 
 </ContentPage>
